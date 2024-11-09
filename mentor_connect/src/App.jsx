@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './sections/Login/Login';
 import SignupMentee from './sections/SignUp_mentee/signup_mentee';
 import Header from './sections/Header/Header';
-import Home from './sections/Home/Home';
+import Hero from './sections/hero/hero';
 import './App.css'
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
     <div>
       <Header/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Hero />} />
+        <Route path="/Home" element={<Hero />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup_mentee" element = {<SignupMentee/>} />
       </Routes>
