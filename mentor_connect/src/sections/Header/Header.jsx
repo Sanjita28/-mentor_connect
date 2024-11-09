@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'; // Make sure to create and style this
+import logo from '../../assets/OIG3.png'
 
 const Header = () => {
   return (
     <header className="header">
       <div className="container">
         {/* Logo Section */}
-        <div className="logo">
-        <img src="./../../assets/OIG3.png" alt="Mentor Connect Logo" />
+        <div className="icon">
+        <img src={logo} alt="Mentor Connect Logo" />
       </div>
         {/* Search Bar */}
         <div className="search-bar">

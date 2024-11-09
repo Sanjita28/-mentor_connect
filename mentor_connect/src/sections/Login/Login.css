@@ -20,11 +20,13 @@
     width: 30%;
     display: flex;
     justify-content: center;
-    align-items: top;
-    padding-top: 8%;
+    align-items: center;
   }
   
-  .logo img {
+  .login-left > .logo{
+    margin-bottom: 40vh;
+  }
+  .login-left > .logo img {
     width: 100%;
     max-width: 500px;
   }
@@ -121,6 +123,7 @@
   .google-login-btn {
     width: 100%;
     background-color: white;
+    color: black;
     border: 1px solid #ccc;
     padding: 10px;
     display: flex;
