@@ -59,7 +59,7 @@ const Login = () => {
 
             <div className="extra-links">
               <a href="#">Forgot password?</a>
-              <p>Don't have an account? <a href="#">Sign up as a mentee</a> or <a href="#">apply to be a mentor</a></p>
+              <p>Don't have an account? <a href="#">Sign up as a Mentee</a> or <a href="#">Apply to be a Mentor</a></p>
             </div>
           </form>
         </div>
