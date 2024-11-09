@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import logo from './../../assets/OIG3.png';
+import Google_logo from '../../assets/gooogle_logo.png'
 
 const Login = () => {
   const [role, setRole] = useState('mentee'); // Track selected role
@@ -54,7 +55,7 @@ const Login = () => {
             </div>
 
             <button className="google-login-btn">
-              <img src="/path-to-google-icon.png" alt="Google Icon" /> Log in with Google
+              <img src={Google_logo} alt="Google Icon" /> Log in with Google
             </button>
 
             <div className="extra-links">
