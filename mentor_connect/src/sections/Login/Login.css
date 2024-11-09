@@ -54,18 +54,23 @@
   .toggle-btn {
     flex: 1;
     padding: 10px 20px;
-    background-color: #f3f3f3;
+    background-color: transparent;
     border: 1px solid #ccc;
-    color: #393a3b;
+    color: #00796b;
     cursor: pointer;
   }
   
   .toggle-btn.active {
-    background-color: transparent;
+    background-color: transparent; /* Set background to white */
     border-bottom: 2px solid #00796b;
-    color:#f3f3f3;
-    margin-right: 5px;
+    color:#00796b; /* Update text color */
   }
+  .toggle-btn.active,.toggle-btn::after {
+    background-color: #fff;
+    border-bottom: 2px solid #00796b;
+    color:#0c0c0c;
+  }
+  
   
   .input-group {
     margin-bottom: 1rem;
