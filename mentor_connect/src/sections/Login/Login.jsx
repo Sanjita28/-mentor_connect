@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
 import logo from './../../assets/OIG3.png';
-import Google_logo from '../../assets/gooogle_logo.png'
+import Google_logo from '../../assets/gooogle_logo.png';
 
 const Login = () => {
   const [role, setRole] = useState('mentee'); // Track selected role
@@ -60,7 +61,7 @@ const Login = () => {
 
             <div className="extra-links">
               <a href="#">Forgot password?</a>
-              <p>Don't have an account? <a href="#">Sign up as a Mentee</a> or <a href="#">Apply to be a Mentor</a></p>
+              <p>Don't have an account? <Link to="/signup_mentee">Sign up as a Mentee</Link> or <Link to="/signup_mentor">Apply to be a Mentor</Link></p>
             </div>
           </form>
         </div>

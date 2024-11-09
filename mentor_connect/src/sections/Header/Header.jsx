@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container">
         {/* Logo Section */}
         <div className="icon">
-        <img src={logo} alt="Mentor Connect Logo" />
+        <Link to= "/Home"><img src={logo} alt="Mentor Connect Logo" /></Link>
       </div>
         {/* Search Bar */}
         <div className="search-bar">
