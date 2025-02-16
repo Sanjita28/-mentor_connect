@@ -1,28 +1,27 @@
-import { useState } from 'react'
-import React from 'react'
+import { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './sections/Login/Login';
-import SignupMentee from './sections/SignUp_mentee/signup_mentee';
+import SignupForm from "./sections/signup_form/signup";
 import Header from './sections/Header/Header';
 import Hero from './sections/hero/hero';
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
-    <div>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/Home" element={<Hero />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup_mentee" element = {<SignupMentee/>} />
-      </Routes>
-    </div>
-  </Router>
-  )
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/home" element={<Hero />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup/mentee" element={<SignupForm role="mentee" />} />
+          <Route path="/signup/mentor" element={<SignupForm role="mentor" />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

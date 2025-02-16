@@ -33,37 +33,40 @@ const Login = () => {
               I'm a mentor
             </button>
           </div>
-
           <form>
-            <div className="input-group">
-              <label>Email or username</label>
-              <input type="text" placeholder="Email or username" required />
+              <div className="input-group">
+                <label>Email or username</label>
+                <input type="text" placeholder="Email or username" required />
+              </div>
+
+              <div className="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Password" required />
+              </div>
+
+              {/* Unified Login Button */}
+              <button type="submit" className="login-btn">Log in as {role === 'mentee' ? "Mentee" : "Mentor"}</button>
+
+              <div className="or-section">
+                <hr /> <span>Or</span> <hr />
+              </div>
+
+              <button className="google-login-btn">
+                <img src={Google_logo} alt="Google Icon" /> Log in with Google
+              </button>
+
+              <div className="extra-links">
+                <a href="#">Forgot password?</a>
+                <p>
+                  {role === "mentee" ? (
+                    <>Want to become a Mentor? <Link to="/signup/mentee">Apply here</Link></>
+                  ) : (
+                    <>Signing up as a Mentee instead? <Link to="/signup/mentor">Sign up here</Link></>
+                  )}
+                </p>
             </div>
 
-            <div className="input-group">
-              <label>Password</label>
-              <input type="password" placeholder="Password" required />
-            </div>
-
-            {role === 'mentee' ? (
-              <button type="submit" className="login-btn">Log in as Mentee</button>
-            ) : (
-              <button type="submit" className="login-btn">Log in as Mentor</button>
-            )}
-
-            <div className="or-section">
-              <hr /> <span>Or</span> <hr />
-            </div>
-
-            <button className="google-login-btn">
-              <img src={Google_logo} alt="Google Icon" /> Log in with Google
-            </button>
-
-            <div className="extra-links">
-              <a href="#">Forgot password?</a>
-              <p>Don't have an account? <Link to="/signup_mentee">Sign up as a Mentee</Link> or <Link to="/signup_mentor">Apply to be a Mentor</Link></p>
-            </div>
-          </form>
+            </form>
         </div>
       </div>
     </div>

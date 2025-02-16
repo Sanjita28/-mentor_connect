@@ -1,5 +1,4 @@
-/* signup_mentee.css */
-
+/* Signup Form General Styling */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +14,7 @@ body {
     height: 100vh;
 }
 
+/* Left Section with Logo */
 .signup-left {
     background-color: #0e7c7c;
     width: 30%;
@@ -23,15 +23,12 @@ body {
     align-items: center;
 }
 
-.signup-left > .logo {
-    margin-bottom: 40vh;
-}
-
 .signup-left > .logo img {
     width: 100%;
     max-width: 500px;
 }
 
+/* Right Section with Form */
 .signup-right {
     width: 70%;
     display: flex;
@@ -49,6 +46,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Input Fields */
 .input-group {
     margin-bottom: 1rem;
 }
@@ -56,6 +54,7 @@ h2 {
 .input-group label {
     display: block;
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .input-group input {
@@ -65,6 +64,7 @@ h2 {
     border-radius: 4px;
 }
 
+/* Signup Button */
 .signup-btn {
     width: 100%;
     background-color: #00796b;
@@ -77,6 +77,11 @@ h2 {
     font-size: 1rem;
 }
 
+.signup-btn:hover {
+    background-color: #005b4f;
+}
+
+/* OR Section */
 .or-section {
     display: flex;
     align-items: center;
@@ -92,8 +97,10 @@ h2 {
 .or-section span {
     margin: 0 10px;
     color: #999;
+    font-weight: bold;
 }
 
+/* Google Signup Button */
 .google-signup-btn {
     width: 100%;
     background-color: white;
@@ -111,13 +118,16 @@ h2 {
     margin-right: 10px;
 }
 
+/* Extra Links */
 .extra-links {
     margin-top: 1.5rem;
+    text-align: center;
 }
 
 .extra-links a {
     color: #00796b;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .extra-links a:hover {
